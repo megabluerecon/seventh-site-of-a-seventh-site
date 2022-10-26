@@ -1,5 +1,5 @@
 # portal
 
-An example portal page
+This repo creates a page on which I store my web projects
 
-Please feel free to use the HMTL/CSS and JS in this repo as you wish!
+
