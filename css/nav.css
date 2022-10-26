@@ -64,7 +64,7 @@
 /* TABLET */
 @media all and (min-width:501px) and (max-width:1199px) {
     .topnav {
-        width: 91%;
+        width: 90%;
     }
 }
 
