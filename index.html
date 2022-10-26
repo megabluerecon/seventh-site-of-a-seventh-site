@@ -2,12 +2,11 @@
 <html lang="en">
  <head>
      <title>Your Name Goes Here</title>
-  <meta charset="utf-8" />
-  <meta name="robots" content="noindex,nofollow" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="stylesheet" href="css/portal.css" />
-  <link rel="stylesheet" href="css/nav.css" />
-  <link rel="stylesheet" href="css/forms.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/portal.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/forms.css">
  </head>
  <body>
      <header>
@@ -26,7 +25,7 @@
         <picture class="profile">
             <source media="(min-width: 1200px)" srcset="images/desktop.jpg">
             <source media="(min-width: 501px)" srcset="images/tablet.jpg">
-            <img src="images/phone.jpg" alt="That's me!" />
+            <img src="images/phone.jpg" alt="That's me!">
         </picture>   
        <h2 class="subheader">About Me (Change made in main)</h2>
        
@@ -46,7 +45,7 @@
 
        <p>Study how this page is built, and use it as a foundation for your portal or other sites!</p>
      <footer>
-      <p><small>&copy; 2021 by 
+      <p><small>&copy; 2021-<span id="this-year"></span> by 
           YOUR NAME HERE, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
@@ -59,7 +58,11 @@
     //https://tinyurl.com/dynamic-html-checker
     document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
       
-    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
+     
+     //set current year in span with id of this-year
+     let d = new Date(); let thisYear = d.getFullYear();
+     document.getElementById("this-year").innerHTML = thisYear;
     
     //manages mobile nav 
     function myFunction() {
