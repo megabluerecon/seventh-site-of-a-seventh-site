@@ -1,10 +1,11 @@
 /* Global rules */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
 
 html {
-    background-color: lightgray;
-    font-family: 'Quicksand', sans-serif;
+    background-color: #6daffe;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
 }
@@ -21,9 +22,24 @@ h1 {
     line-height: 2.5em;
 }
 
+h1.page-header {
+    font-family: 'Cairo',serif;
+   -webkit-border-top-left-radius: 5px;
+   -webkit-border-top-right-radius: 5px;
+   -moz-border-radius-topleft: 5px;
+   -moz-border-radius-topright: 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
 main.wrapper {
-    background-color: white;
+    background-color: #fff;
     overflow: auto;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 
 p {
