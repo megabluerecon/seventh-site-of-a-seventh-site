@@ -10,6 +10,11 @@ html {
     line-height: 1.5em;
 }
 
+body{
+    margin:0; /* removes space above body, top of page */
+ }
+ 
+
 ::selection {
     color: #000; 
     background: #ff0;
