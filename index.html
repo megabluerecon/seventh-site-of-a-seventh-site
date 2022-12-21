@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Project Name</title>
+     <title>Dien's Listened to Albums</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
@@ -9,32 +9,57 @@
  </head>
  <body>
      <header>
-     <h1 class="page-header">Site Name</h1>
-        <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Link</a>
-            <a href="#" target="_blank">Link</a>
-            <a href="#" target="_blank">Link</a>
-            <a href="#" target="_blank">Link</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
+     <h1 class="page-header">Listened to Albums</h1>
      </header>
      
    <main class="wrapper">
-       <h2 class="subheader">Project Name</h2>
-       
-       <p>Clever content goes here</p>
-       <p>Clever content goes here</p>
-       <p>Clever content goes here</p>
+    <div id="about-me">
+      <h2 class="subheader" style="text-align: center">About Me</h2>
+      <img id="me-img" src="https://picsum.photos/500" alt="picture of me">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <article class="album">
+      <h2>Seventh Son of a Seventh Son</h2>
+      <img class="album-cover" src="./images/seventh_son.jpg" alt="Seventh Son of a Seventh Son album cover art">
+      <section class="album-tabs">
+        <button class="tab-button" onclick="openTab('song-list')">Song List</button>
+        <button class="tab-button" onclick="openTab('rating')">Rating</button>
+        <button class="tab-button" onclick="openTab('info')">Info</button>
+        <div id="song-list" class="tab">
+          <ol>
+            <li>Moonchild <button style="float: right;" id="moonchild-btn" onclick="playAudio('moonchild')">Play</button></li>
+            <li>Infinite Dreams <button style="float: right;" id="inf-dreams-btn" onclick="playAudio('inf-dreams')">Play</button></li>
+            <li>Can I Play With Madness </li>
+            <li>The Evil That Men Do </li>
+            <li>Seventh Son of a Seventh Son </li>
+            <li>The Prophecy </li>
+            <li>The Clairvoyant </li>
+            <li>Only the Good Die Young </li>
+          </ol>
+        </div>
+        <div id="rating" class="tab" style="display: none">
+          <h2>Perfect</h2>
+          <p>The album rating explanation goes here.</p>
+        </div>
+        <div id="info" class="tab" style="display: none">
+          <h2>Info</h2>
+          <ul>
+            <li><strong>Artist: </strong> Iron Maiden</li>
+            <li><strong>Released: </strong> April 11, 1988</li>
+            <li><strong>Genre: </strong> Heavy Metal</li>
+            <li><strong>Length: </strong> 43:51</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+    <div>
+      <audio id="moonchild" src="./audio/ssoass/moonchild_audio.mp3"></audio>
+      <audio id="inf-dreams" src="./audio/ssoass/inf_dreams_audio.mp3"></audio>
+    </div>
 
-       <h3>Page Origin</h3>
-       <p>The HTML/CSS comes from Sara Newman's Web Fundamentals class as taught at Seattle Central. This page provides a basis for students to build a responsive portal page.</p>
-        
-
-    <p>Study how this page is built, with the <a href="https://www.youtube.com/watch?v=151NXMk0a2c" target="_blank">DOM Inspector</a> and use it as a foundation for your portal or other sites!</p>
      <footer>
       <p><small>&copy; 2021-<span id="this-year"></span> by 
-          YOUR NAME, All Rights Reserved ~ 
+          DIEN NGUYEN, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
      </p>
